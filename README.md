@@ -14,3 +14,5 @@
 - git branch -M main
 ### Enviar repositório local para um lugar da nuvem
 - git push -u origin main
+### Puxar(pull) atualizações do repositório remoto para o repositório local
+- git pull
