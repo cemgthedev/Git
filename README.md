@@ -22,3 +22,17 @@
 - git branch
 ### Trocar de branch
 - git checkout branch_name
+### Deletar branch local
+Obs: os comandos abaixo devem ser executados em outra branch
+- git branch -d branch_name (excluirá a ramificação somente se ela já tiver sido enviada e mesclada com a ramificação remota)
+- git brach -D branch_name (forcará a exclusão)
+### Deletar branch remota
+- git push origin --delete branch_name
+
+## Projetos com Vite
+### Subir projeto para o GitHub Pages
+- adicione repo:"/repository_name/" ao arquivo vite.config.ts
+- npm install gh-pages --save-dev
+- faça as seguintes configurações no arquivo package.json {... "homepage": "https://user_name.github.io/repository_name/", ... "scripts": {
+... "build": "vite build", "predeploy": "npm run build", "deploy": "gh-pages -d dist", ...} ...}
+- npm run deploy
