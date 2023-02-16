@@ -16,3 +16,9 @@
 - git push -u origin main
 ### Puxar(pull) atualizações do repositório remoto para o repositório local
 - git pull
+### Criar uma noca branch
+- git checkout -b new_brach
+### Listar branchs
+- git branch
+### Trocar de branch
+- git checkout branch_name
