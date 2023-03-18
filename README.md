@@ -31,8 +31,9 @@ Obs: os comandos abaixo devem ser executados em outra branch
 
 ## Projetos com Vite
 ### Subir projeto para o GitHub Pages
-- adicione repo:"/repository_name/" ao arquivo vite.config.ts
+- adicione base:"/repository_name/" ao arquivo vite.config.ts
 - npm install gh-pages --save-dev
 - faça as seguintes configurações no arquivo package.json {... "homepage": "https://user_name.github.io/repository_name/", ... "scripts": {
 ... "build": "vite build", "predeploy": "npm run build", "deploy": "gh-pages -d dist", ...} ...}
+- npm run redeploy
 - npm run deploy
