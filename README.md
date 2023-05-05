@@ -35,5 +35,5 @@ Obs: os comandos abaixo devem ser executados em outra branch
 - npm install gh-pages --save-dev
 - faça as seguintes configurações no arquivo package.json {... "homepage": "https://user_name.github.io/repository_name/", ... "scripts": {
 ... "build": "vite build", "predeploy": "npm run build", "deploy": "gh-pages -d dist", ...} ...}
-- npm run redeploy
+- npm run predeploy
 - npm run deploy
